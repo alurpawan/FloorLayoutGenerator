@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 struct MoveDirection
 {
     public float DistanceToMove;
@@ -52,7 +51,6 @@ public class GenerateRooms : MonoBehaviour
     int numberOfIterations = 0;
     [SerializeField]
     int maxIterations = 10;
-
     #endregion
 
     /// <summary>
@@ -85,6 +83,7 @@ public class GenerateRooms : MonoBehaviour
 
     public void CaptureLayout(int index)
     {
+        
         string name = "/Captures/SS" + index.ToString() + ".png";
         ScreenCapture.CaptureScreenshot(Application.dataPath + name);
 
